@@ -1,0 +1,61 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    background-image: url("images/room.gif");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#date{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.left{
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    margin: 40px auto;
+}
+#clock{
+    transform: rotate(10deg);
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 30px;
+    color: rgba(32,40,48,0.7);
+    text-shadow: 1px 0 rgba(0,0,0,0.4);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+    width: 30%;
+    height: 47%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.icons > a{
+    align-content: center;
+    color: white;
+    margin: 5px 5px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.feed{
+    width: 30%;
+    height: 100px;
+    margin: 40px auto;
+}
