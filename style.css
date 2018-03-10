@@ -30,15 +30,16 @@ html, body{
 #clock{
     transform: rotate(10deg);
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 48%;
-    font-family: 'Aldrich', sans-serif;
+    font-family: "Aldrich", sans-serif;
     font-size: 30px;
     color: rgba(32,40,48,0.7);
     text-shadow: 1px 0 rgba(0,0,0,0.4);
 }
 .icons{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     position: relative;
     top: 25%;
@@ -46,13 +47,27 @@ html, body{
     height: 47%;
     max-width: 500px;
     margin: 40px auto;
-    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
 }
-.icons > a{
-    align-content: center;
-    color: white;
-    margin: 5px 5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+#icons-left{
+    display: flex;
+    flex-direction: column;
+    font-family: "Aldrich", sans-serif;
+    //background-color: rgba(0,0,0,0.5);
+    padding: 10px 30px;
+}
+#icons-left > a{
+    color: rgba(164,170,176,0.7);
+    padding: 4px 0px;
+}
+#icons-right{
+    display: flex;
+    flex-direction: column;
+    font-family: "Aldrich", sans-serif;
+    padding: 10px 30px;
+}
+#icons-right > a{
+    color: rgba(164,170,176,0.7);
 }
 .feed{
     width: 30%;
