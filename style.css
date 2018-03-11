@@ -31,13 +31,13 @@ html, body{
     transform: rotate(10deg);
     position: absolute;
     top: 11%;
-    left: 48%;
+    left: 47%;
     font-family: "Aldrich", sans-serif;
     font-size: 30px;
     color: rgba(32,40,48,0.7);
     text-shadow: 1px 0 rgba(0,0,0,0.4);
 }
-.icons{
+.window{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -53,7 +53,6 @@ html, body{
     display: flex;
     flex-direction: column;
     font-family: "Aldrich", sans-serif;
-    //background-color: rgba(0,0,0,0.5);
     padding: 10px 30px;
 }
 #icons-left > a{
@@ -68,6 +67,7 @@ html, body{
 }
 #icons-right > a{
     color: rgba(164,170,176,0.7);
+    padding: 4px 0px;
 }
 .feed{
     width: 30%;
