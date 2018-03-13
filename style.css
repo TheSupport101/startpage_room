@@ -1,36 +1,27 @@
 html, body{
     height: 100%;
     margin: 0px;
-    background-image: url("images/room.gif");
+    background-image: url("images/room-lossy.gif");
     background-repeat: no-repeat;
-    background-size: cover;    
-}
-#date{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 25%;
-    color: white;
+    background-size: cover;
 }
 .main{
-    width: 100%;
-    height: 60%;
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 .left{
-    flex-direction: column;
-    position: relative;
-    width: 30%;
-    height: 500px;
     display: flex;
-    margin: 40px auto;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    position: relative;
 }
 #clock{
     transform: rotate(10deg);
     position: absolute;
-    top: 11%;
+    top: 38%;
     left: 47%;
     font-family: "Aldrich", sans-serif;
     font-size: 30px;
@@ -39,38 +30,72 @@ html, body{
 }
 .window{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 34%;
+    margin-top: 43%;
+}
+.window-top{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    top: 25%;
+    text-align: center;
+    margin-left: 11%;
+    margin-right: 10%;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30%;
-    height: 47%;
-    max-width: 500px;
-    margin: 40px auto;
+    height: 100%;
+    color: rgba(164,170,176,0.7);
+    font-family: "Aldrich", sans-serif;
     font-size: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 0 rgba(0,0,0,0.4);
 }
-#icons-left{
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5% 5%;
+}
+.highlight{
+    color: white;
+}
+.hide{
+    display: none;
+}
+.window-bottom{
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    margin-left: 11%;
+    margin-right: 10%;
+}
+#icons{
+    flex-direction: row;
+}
+.column{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: 5% 10%;
+}
+.column > a{
     font-family: "Aldrich", sans-serif;
-    padding: 10px 30px;
+    color: rgba(0,0,0,0.7);
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 1px;
 }
-#icons-left > a{
-    color: rgba(164,170,176,0.7);
-    padding: 4px 0px;
+#weather{
 }
-#icons-right{
-    display: flex;
-    flex-direction: column;
-    font-family: "Aldrich", sans-serif;
-    padding: 10px 30px;
+#feed{
 }
-#icons-right > a{
-    color: rgba(164,170,176,0.7);
-    padding: 4px 0px;
-}
-.feed{
-    width: 30%;
+.right{
+    position: relative;
+    width: 33%;
     height: 100px;
     margin: 40px auto;
 }

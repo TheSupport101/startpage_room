@@ -5,10 +5,9 @@
 	    <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     </head>
     <body>
-        <div id="date">
-        </div>
         <div class="main">
             <div class="left">
                 <div id="clock">
@@ -16,18 +15,37 @@
                 </div>
             </div>
             <div class="window">
-                <div id="icons-left">
-                    <a href="https://www.reddit.com">reddit</a>
-                    <a href="http://boards.4chan.org/wg/">/wg/</a>
+                <div class="window-top">
+                    <p class="buttons highlight" id="button-icons">links</p>
+                    <p class="buttons" id="button-weather">weather</p>
+                    <p class="buttons" id="button-feed">rss</p>
                 </div>
-                <div id="icons-right">
-                    <a href="https://github.com/">github</a>
-                    <a href="https://mail.google.com/">gmail</a>
+                <div class="window-bottom">
+                    <div class="content active" id="icons">
+                        <div class="column type" id="icons-left">
+                            <a href="https://www.reddit.com">reddit</a>
+                            <a href="http://boards.4chan.org/wg/">/wg/</a>
+                            <a href="https://www.youtube.com/">youtube</a>
+                        </div>
+                        <div class="column" id="icons-right">
+                            <a href="https://github.com/">github</a>
+                            <a href="https://mail.google.com/">gmail</a>
+                            <a href="https://www.w3schools.com/">w3schools</a>
+                        </div>
+                    </div>
+                    <div class="content hide" id="weather">
+
+                    </div>
+                    <div class="content hide" id="feed">
+
+                    </div>
+                    
                 </div>
             </div>
-            <div class="feed">
+            <div class="right">
             </div>
         </div>
+        <script src="jquery-3.3.1.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

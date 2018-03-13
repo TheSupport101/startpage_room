@@ -25,5 +25,39 @@ function displayDate() {
     document.getElementById("date").innerHTML = "<p>" + day + " " + month + "</p>";
 }
 
+$(function(){
+    $("#button-icons").mouseover(function(){
+        if($(".content").hasClass("active")){
+            $(".content").removeClass("active").hide();
+        }
+        if($(".buttons").hasClass("highlight")){
+            $(".buttons").removeClass("highlight");
+        }
+        $("#button-icons").addClass("highlight");
+        $("#icons").addClass("active").show();
+    });
+    $("#button-weather").mouseover(function(){
+        if($(".content").hasClass("active")){
+            $(".content").removeClass("active").hide();
+        }
+        if($(".buttons").hasClass("highlight")){
+            $(".buttons").removeClass("highlight");
+        }
+        $("#button-weather").addClass("highlight");
+        $("#weather").addClass("active").show();
+    });
+    $("#button-feed").mouseover(function(){
+        if($(".content").hasClass("active")){
+            $(".content").removeClass("active").hide();
+        }
+        if($(".buttons").hasClass("highlight")){
+            $(".buttons").removeClass("highlight");
+        }
+        $("#button-feed").addClass("highlight");
+        $("#feed").addClass("active").show("50");
+    });
+});
+
+
 displayTime();
 //displayDate();
