@@ -1,5 +1,9 @@
-$(function() {
-    $('body').removeClass('fade-out');
+/*function init() {
+    $('#main').css({opacity: 1});
+}*/
+
+$(function fadeIn() {
+    $("#main").css({opacity: 1});
 });
 
 $(function displayTime() {
