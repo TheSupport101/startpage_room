@@ -4,6 +4,7 @@ html, body{
     background-image: url("images/room-lossy.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .main{
     display: flex;
@@ -16,13 +17,9 @@ html, body{
     flex-direction: column;
     width: 33%;
     height: 100%;
-    position: relative;
 }
 #clock{
     transform: rotate(10deg);
-    position: absolute;
-    top: 38%;
-    left: 47%;
     font-family: "Aldrich", sans-serif;
     font-size: 30px;
     color: rgba(32,40,48,0.7);
@@ -32,7 +29,7 @@ html, body{
     display: flex;
     flex-direction: column;
     width: 34%;
-    margin-top: 43%;
+    margin-top: 37%;
 }
 .window-top{
     display: flex;
