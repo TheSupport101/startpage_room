@@ -1,6 +1,3 @@
-// fading when page is loaded
-document.body.className += ' fade-out';
-
 $(function() {
     $('body').removeClass('fade-out');
 });
