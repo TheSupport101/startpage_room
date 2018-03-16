@@ -7,21 +7,21 @@
         <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet"> 
     </head>
     <body>
-        <div class="main">
+        <div class="main row">
             <div class="left">
                 <div id="clock">
                     00:00
                 </div>
             </div>
-            <div class="window">
-                <div class="window-top">
-                    <p class="buttons highlight" id="button-icons">links</p>
-                    <p class="buttons" id="button-weather">weather</p>
-                    <p class="buttons" id="button-feed">rss</p>
+            <div id="window">
+                <div class="center" id="window-top">
+                    <p class="buttons center highlight" id="button-icons">links</p>
+                    <p class="buttons center" id="button-weather">weather</p>
+                    <p class="buttons center" id="button-feed">rss</p>
                 </div>
                 <div class="window-bottom">
                     <div class="content active" id="icons">
-                        <div class="column type" id="icons-left">
+                        <div class="column" id="icons-left">
                             <a href="https://www.reddit.com">reddit</a>
                             <a href="http://boards.4chan.org/wg/">/wg/</a>
                             <a href="https://www.youtube.com/">youtube</a>
@@ -41,7 +41,17 @@
                     
                 </div>
             </div>
-            <div class="right">
+            <div id="right">
+                <div id="newswindow" class="center">
+                    <div id="newsfeed" class="center">
+                        <div id="feed-button">
+                            <p class="buttons">news</p>
+                        </div>
+                        <div id="news">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="jquery-3.3.1.min.js"></script>

@@ -1,3 +1,10 @@
+// fading when page is loaded
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
 $(function displayTime() {
     var today = new Date();
     var h = today.getHours();
@@ -49,8 +56,12 @@ $(function showMenu(){
     });
 });
 
+$(function showNews(){
+    $("")
+});
+
 var backgroundImage = new Image();
-backgroundImage.src = $("body").css("background-image").replace(/"/g,"").replace(/url\(|\)$/ig, "");
+backgroundImage.src = $(".main").css("background-image").replace(/"/g,"").replace(/url\(|\)$/ig, "");
 
 backgroundImage.onload = function() {
     var width = this.width;
@@ -72,11 +83,22 @@ backgroundImage.onload = function() {
         var scale = (windowWidth / width);
         var windowHeight = height * scale;
     }
-    var percentx = 0.34;
-    var percenty = 0.17;
-    var clockxpos = (object.outerWidth()/2) - (percentx*windowWidth);
-    var clockypos = (object.outerHeight()/2) - (percenty*windowHeight);
+    // adjust clock position
+    var clockX = 0.34;
+    var clockY = 0.17;
+    // adjust newsfeed position
+    var feedX = 0.875;
+    var feedY = 0.12;
+
+    var midpointx = object.outerWidth()/2;
+    var midpointy = object.outerHeight()/2;
+    var clock_xPos = midpointx - (clockX*windowWidth);
+    var clock_yPos = midpointy - (clockY*windowHeight);
+    var feed_xPos = midpointx - (feedX*windowHeight);
+    var feed_yPos = midpointy - (feedY*windowWidth);
 
     $("#clock").css({position: "fixed"});
-    $("#clock").css({top: clockypos, left: clockxpos});
+    $("#clock").css({top: clock_yPos, left: clock_xPos});
+    $("#newswindow").css({position: "fixed"});
+    $("#newswindow").css({top: feed_yPos, right: feed_xPos});
 };
