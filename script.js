@@ -1,7 +1,3 @@
-/*function init() {
-    $('#main').css({opacity: 1});
-}*/
-
 $(function fadeIn() {
     $("#main").css({opacity: 1});
 });
@@ -57,9 +53,12 @@ $(function showMenu(){
     });
 });
 
-$(function showNews(){
-    $("")
-});
+/*$(function showNews(){
+    $("#feed-button").mouseover(function(){
+        $("#feed-button").addClass("hide").hide();
+        $("#news").removeClass("hide").show(4000);
+    });
+});*/
 
 var backgroundImage = new Image();
 backgroundImage.src = $(".main").css("background-image").replace(/"/g,"").replace(/url\(|\)$/ig, "");
